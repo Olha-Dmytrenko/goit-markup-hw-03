@@ -12,6 +12,34 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+
 /* Header*/
 
 .page-header {

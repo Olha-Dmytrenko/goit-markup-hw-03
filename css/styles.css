@@ -22,6 +22,7 @@ h3 {
 
 ul {
   padding-left: 0;
+  list-style: none;
   margin: 0;
 }
 
@@ -46,6 +47,8 @@ img {
 
 .page-header {
   background-color: var(--secondary-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .logo-header {
@@ -61,11 +64,6 @@ img {
 
 .logo-header-secondary {
   color: #000000;
-}
-
-/* List */
-ul {
-  list-style: none;
 }
 
 /* Site-nav */
@@ -122,6 +120,7 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .hero {
@@ -133,7 +132,6 @@ ul {
   color: var(--secondary-text-color);
   background-color: var(--accent-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  display: inline-block;
   border: 1px solid transparent;
   border-radius: 4px;
   font-family: inherit;
@@ -154,6 +152,12 @@ ul {
 }
 
 /* Section */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .section-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -294,8 +298,6 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   padding: 6px 22px;
-  margin-right: 8px;
-  width: ;
 }
 
 .button-filter:hover,

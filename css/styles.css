@@ -49,6 +49,11 @@ img {
   background-color: var(--secondary-text-color);
   padding-top: 32px;
   padding-bottom: 32px;
+  display: flex;
+}
+
+.header-nav {
+  display: flex;
 }
 
 .logo-header {
@@ -60,6 +65,10 @@ img {
   letter-spacing: 0.03em;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-decoration: none;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 215px;
+  margin-right: 93px;
 }
 
 .logo-header-secondary {
@@ -67,6 +76,11 @@ img {
 }
 
 /* Site-nav */
+
+.site-nav {
+  display: flex;
+}
+
 .site-nav .link {
   color: var(--title-text-color);
   text-decoration: none;
@@ -74,6 +88,7 @@ img {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-right: 50px;
 }
 
 .site-nav .link:hover,
@@ -86,6 +101,11 @@ img {
 }
 
 /* Auth-nav */
+
+.auth-nav {
+  display: flex;
+}
+
 .auth-nav .link-mail {
   color: var(--primary-text-color);
   text-decoration: none;
@@ -93,6 +113,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  margin-right: 50px;
 }
 
 .auth-nav .link-tel {
@@ -102,6 +123,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  margin-right: 50px;
 }
 
 .auth-nav .link-mail:hover,
@@ -120,10 +142,12 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  padding-top: 280px;
+  padding-bottom: 280px;
   margin-bottom: 30px;
 }
 
-.hero {
+.hero .container {
   background: var(--primary-background-color);
 }
 
@@ -143,6 +167,7 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   padding: 10px 32px;
+  margin: 0 auto;
 }
 
 .button:hover,
@@ -168,6 +193,10 @@ img {
 }
 
 /* Features */
+.feature.list {
+  display: flex;
+}
+
 .feature-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -200,11 +229,17 @@ img {
 
 /* Examples of work */
 .work-list {
+  display: flex;
+}
+
+.work-item + .work-item {
+  margin-left: 30px;
 }
 
 /* Team */
 .section-team {
   background-color: var(--secondary-background-color);
+  display: flex;
 }
 
 .team-list-title {
@@ -214,6 +249,10 @@ img {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.team-list-element {
+  flex-basis: calc(100% / 4 - 30%);
 }
 
 .team-list-item {
@@ -228,6 +267,7 @@ img {
 /* Footer */
 .page-footer {
   background-color: var(--primary-background-color);
+  padding: 60px 0px;
 }
 /* Logo-footer */
 .logo-footer {
@@ -238,6 +278,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
+  padding-bottom: 20px;
 }
 
 .logo-footer-secondary {

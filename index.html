@@ -18,13 +18,11 @@
             <nav class="header-nav">
                 <a href="" class="logo-header">Web<span class="logo-header-secondary">Studio</span> </a>
                 <ul class="site-nav">
-                    <li><a href="./index.html" class="link current">Студия</a></li>
-                    <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-                    <li><a href="" class="link">Контакты</a></li>
+                    <li class="site-nav-item"><a href="./index.html" class="link current">Студия</a></li>
+                    <li class="site-nav-item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+                    <li class="site-nav-item"><a href="" class="link">Контакты</a></li>
                 </ul>
-            </nav>
-        </div>
-        <div class="container">
+            </nav>       
             <ul class="auth-nav">
                 <li><a href="mailto:info@devstudio.com" class="link-mail">info@devstudio.com</a></li>
                 <li><a href="tel:+380961111111" class="link-tel">+38 096 111 11 11</a></li>
@@ -35,10 +33,8 @@
     <main>
     <!-- Герой -->
         <section class="hero">
-            <div class="container">
-                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" cursor="pointer" class="button">Заказать услугу</button>
-            </div>
+                <h1 class="hero-title">Эффективные решения<br/> для вашего бизнеса</h1>
+                <button type="button" cursor="pointer" class="button-hero">Заказать услугу</button>
         </section>
 
     <!-- Преимущества -->
@@ -46,7 +42,7 @@
             <div class="container">
                 <h2 class="visually-hidden">Преимущества</h2>
                 <ul class="feature-list">
-                    <li>
+                    <li class="feature-item">
                         <h3 class="feature-title">Внимание к деталям</h3>
                         <p class="feature-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
@@ -91,25 +87,35 @@
                 <ul class="team-list">
                     <li class="team-list-element">
                         <img src="./images/Igor.jpg" alt="Продакт-дизайнер" width="270">
+                        <div class="team-name">
                         <h3 class="team-list-title">Игорь Демьяненко</h3>
                         <p class="team-list-item">Product Designer</p>
+                        </div>
                     </li>
                     <li class="team-list-element">
                         <img src="./images/Olha.jpg" alt="Программист" width="270">
+                        <div class="team-name">
                         <h3 class="team-list-title">Ольга Репина</h3>
                         <p class="team-list-item">Frontend Developer</p>
+                        </div>
                     </li>
                     <li class="team-list-element">
                         <img src="./images/Nikolai.jpg" alt="Маркетолог" width="270">
+                        <div class="team-name">
                         <h3 class="team-list-title">Николай Тарасов</h3>
                         <p class="team-list-item">Marketing</p>
+                        </div>
+                 
                     </li>
                     <li class="team-list-element">
                         <img src="./images/Mihail.jpg" alt="Дизайнер" width="270">
+                        <div class="team-name">
                         <h3 class="team-list-title">Михаил Ермаков</h3>
-                        <p class="team-list-item">UI Designer</p> 
+                        <p class="team-list-item">UI Designer</p>
+                        </div>
                     </li>
                 </ul>
+            
             </div>
         </section>
     </main>

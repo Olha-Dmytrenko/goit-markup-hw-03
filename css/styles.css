@@ -48,8 +48,7 @@ img {
 
 .page-header {
   background-color: var(--secondary-text-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
+  border-bottom: 1px solid #ececec;
 }
 
 .main-nav {
@@ -80,11 +79,6 @@ img {
 .logo-header-secondary {
   color: #000000;
 }
-
-/* margin-top: 25px; 
-  margin-bottom: 25px;
-  margin-left: 20px;
-  margin-right: 93px; */
 
 /* Site-nav */
 
@@ -123,8 +117,8 @@ img {
 .auth-nav {
   display: flex;
   margin-left: auto;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .auth-nav-item + .auth-nav-item {
@@ -206,7 +200,16 @@ img {
 
 /* Section */
 
-.section {
+.section-feature {
+  padding-top: 94px;
+}
+
+.section-work {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-team {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -233,11 +236,17 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .feature-item {
   width: 270px;
 }
+
+.feature-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -260,6 +269,11 @@ img {
 }
 
 /* Examples of work */
+
+.section-title {
+  margin-bottom: 50px;
+}
+
 .work-list {
   display: flex;
 }
@@ -269,6 +283,11 @@ img {
 }
 
 /* Team */
+
+.section-title {
+  margin-bottom: 50px;
+}
+
 .section-team {
   background-color: var(--secondary-background-color);
 }
@@ -288,6 +307,7 @@ img {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
 .team-list-item {
@@ -300,12 +320,14 @@ img {
 }
 
 .team-name {
-  padding: 30px 60px 10px 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
 }
 
 /* Footer */
 .page-footer {
-  padding: 60px 0px;
+  display: block;
   background-color: var(--primary-background-color);
 }
 
@@ -318,15 +340,12 @@ img {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
-  padding-bottom: 20px;
+  padding-top: 60px;
+  margin-bottom: 20px;
 }
 
 .logo-footer-secondary {
   color: var(--secondary-text-color);
-}
-
-.page-footer {
-  margin-top: 64px;
 }
 
 /* Address-footer */
@@ -374,14 +393,15 @@ img {
 
 .portfolio-filters-list {
   display: flex;
-  text-align: center;
-  margin-bottom: 50px;
+  padding-top: 94px;
+  padding-bottom: 50px;
+  justify-content: center;
 }
 
 .button-filter {
   color: var(--title-text-color);
   background-color: var(--secondary-background-color);
-  display: inline-block;
+  display: block;
   border-radius: 4px;
   font-family: inherit;
   font-weight: 500;
@@ -393,6 +413,9 @@ img {
   padding-bottom: 6px;
   padding-right: 22px;
   padding-left: 22px;
+}
+
+.button-filter-group:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -416,6 +439,20 @@ img {
   flex-wrap: wrap;
 }
 
+.project-group {
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.portfolio-projects-list {
+  padding-bottom: 64px;
+}
+
 .project-element {
   width: 370px;
   margin-right: 30px;
@@ -432,6 +469,7 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 
 .project-item {

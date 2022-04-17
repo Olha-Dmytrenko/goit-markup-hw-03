@@ -41,7 +41,6 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid red;
 }
 
 /* Header */
@@ -74,6 +73,7 @@ img {
   margin-top: 25px;
   margin-bottom: 25px;
   margin-left: 0px;
+  width: 145px;
 }
 
 .logo-header-secondary {
@@ -266,6 +266,7 @@ img {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  width: 270px;
 }
 
 /* Examples of work */
@@ -276,6 +277,10 @@ img {
 
 .work-list {
   display: flex;
+}
+
+.work-item {
+  width: 370px;
 }
 
 .work-item + .work-item {
@@ -296,6 +301,9 @@ img {
   display: flex;
 }
 
+.team-list-element {
+  width: 270px;
+}
 .team-list-element + .team-list-element {
   margin-left: 30px;
 }
@@ -331,6 +339,11 @@ img {
   background-color: var(--primary-background-color);
 }
 
+.footer-group {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 /* Logo-footer */
 .logo-footer {
   color: var(--accent-text-color);
@@ -340,7 +353,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
-  padding-top: 60px;
+  display: block;
   margin-bottom: 20px;
 }
 
@@ -357,11 +370,18 @@ img {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  display: block;
+  margin-bottom: 9px;
 }
 
 .contact-list .address-link:hover,
 .contact-list .address-link:focus {
   color: var(--accent-text-color);
+}
+
+.contact-list .mail-link {
+  display: block;
+  margin-bottom: 9px;
 }
 
 .contact-list .mail-link,
